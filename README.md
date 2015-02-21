@@ -4,9 +4,9 @@ Proof of Concept of longevity of Lambda functions execution
 Getting Started
 ---------------
 
-Create a Lambda function from the AWS Console UI. Name the function "life-after-life" (without quotes).
+Create a Lambda function from the AWS Console UI in the Ireland region. Name the function "life-after-life" (without quotes).
 
-Change the the default execution role of the fuction, you need to capability of the function to execute itself:
+Change the the default execution role of the fuction, you need to capability of the function to execute itself. Add the following Statement:
 
 
 ```
@@ -20,3 +20,5 @@ Change the the default execution role of the fuction, you need to capability of 
   ]
 }
 ```
+
+Exucute the function. The first invocation from the console will be terminated after 5 seconds, but the subsequent ones ... will keep running ... Nice thing: those CPU cycles are free of charge, you are only billed for the original 5 seconds, or whatever you specify.
