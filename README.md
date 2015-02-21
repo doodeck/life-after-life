@@ -6,7 +6,7 @@ Getting Started
 
 Create a Lambda function from the AWS Console UI in the Ireland region. Name the function "life-after-life" (without quotes).
 
-Change the the default execution role of the fuction, you need to capability of the function to execute itself. Add the following Statement:
+Change the default execution role of the fuction, you need to capability of the function to execute itself. Add the following Statement:
 
 
 ```
