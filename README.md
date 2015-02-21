@@ -10,5 +10,13 @@ Change the the default execution role of the fuction, you need to capability of 
 
 
 ```
+{
+  "Effect": "Allow",
+  "Action": [
+     "lambda:InvokeFunction"
+  ],
+  "Resource": [
+    "arn:aws:lambda:eu-west-1:<your_aws_account_id>:function:life-after-life"
+  ]
+}
 ```
-
