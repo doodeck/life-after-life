@@ -25,6 +25,16 @@ Increase the timeout of the function to more than 5 seconds, e.g. 15 seconds.
 
 Copy/paste the content of the index.js file into the source code of the function.
 
+Change the sample event to Custom and change the key1 to a numerical value, e.g.
+
+```
+{
+  "key1": 1,
+  "key2": "value2",
+  "key3": "value3"
+}
+```
+
 Execute the function. The first invocation from the console will be terminated after 5 seconds, but the subsequent ones ... will keep running ... Nice thing: those CPU cycles are free of charge, you are only billed for the original 5 seconds, or whatever you specify.
 
 AWS Forum
