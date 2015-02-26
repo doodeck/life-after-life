@@ -1,6 +1,13 @@
 # life-after-life
 Proof of Concept of longevity of Lambda functions execution
 
+Free Tier
+---------
+
+Normally the Lambda function lives until context.done() is called, or timeout parameter (up to 60 seconds) kicks in, whichever comes first. You are only billed for the actual execution time multiplied by the memory until the context.done(), then the billing is off, despite the fact that your code keeps running for hours. This is how it's working as of February 23rd, 2015.
+
+Still, the messages you are printing to the console, ultimately going to CloudWatch logs, are billed normally. So take advantage of you CPU cycles, but do not boast about it ;-) .
+
 Getting Started
 ---------------
 
