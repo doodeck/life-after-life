@@ -50,3 +50,11 @@ AWS Forum
 Let's see what the Gurus have to say:
 
 https://forums.aws.amazon.com/thread.jspa?threadID=172171
+
+AWS Locuta Causa Finita
+-----------------------
+
+It turns out to be a fascinating story and not a bug at all, but a kind of expected bahaviour:
+
+https://aws.amazon.com/blogs/compute/container-reuse-in-lambda/
+
