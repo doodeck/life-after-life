@@ -44,6 +44,17 @@ Change the sample event to Custom and change the key1 to a numerical value, e.g.
 
 Execute the function. The first invocation from the console will be terminated after 5 seconds, but the subsequent ones ... will keep running ... Nice thing: those CPU cycles are free of charge, you are only billed for the original 5 seconds, or whatever you specify.
 
+**Important**
+Make sure you stop the function after starting, otherise it will work indefinitely draining you quota. One way to to stop it is to change the handler name to something non existent, e.g. handler2. Open "Lamba" console:
+
+https://eu-west-1.console.aws.amazon.com/lambda
+
+Click your function name, select "Edit or test function". On the right nale open "Change function configuration and role" section and change hangler name from "index.handler" to "index.handler2". Save you changes.
+
+** Warning **
+After invalidating the handler name the Lambda platform will still try to execute the fuction three time, typically in 3 minutes intervals. Leave the invalid name for some period of time to make sure the fuction isn't restarted.
+
+
 AWS Forum
 ---------
 
