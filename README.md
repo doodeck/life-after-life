@@ -45,7 +45,11 @@ Change the sample event to Custom and change the key1 to a numerical value, e.g.
 Execute the function. The first invocation from the console will be terminated after 5 seconds, but the subsequent ones ... will keep running ... Nice thing: those CPU cycles are free of charge, you are only billed for the original 5 seconds, or whatever you specify.
 
 **Important**
-Make sure you stop the function after starting, otherise it will work indefinitely draining you quota. One way to to stop it is to change the handler name to something non existent, e.g. handler2. Open "Lamba" console:
+Make sure you stop the function after starting, otherise it will work indefinitely draining you quota.
+
+One way to abort the function is to simply delete it using the attached delete-function.sh script.
+
+One GUI-based way to to stop it is to change the handler name to something non existent, e.g. handler2. Open "Lamba" console:
 
 https://eu-west-1.console.aws.amazon.com/lambda
 
