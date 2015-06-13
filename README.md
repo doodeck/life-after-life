@@ -58,6 +58,8 @@ Click your function name, select "Edit or test function". On the right nale open
 ** Warning **
 After invalidating the handler name the Lambda platform will still try to execute the fuction three time, typically in 3 minutes intervals. Leave the invalid name for some period of time to make sure the fuction isn't restarted.
 
+Also, there is a function removal script delete-function.sh, which can also serve as an emergency break to stop the execution of Lambda.
+
 
 AWS Forum
 ---------
@@ -72,4 +74,3 @@ AWS Locuta Causa Finita
 It turns out to be a fascinating story and not a bug at all, but a kind of expected bahaviour:
 
 https://aws.amazon.com/blogs/compute/container-reuse-in-lambda/
-
