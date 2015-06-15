@@ -58,6 +58,7 @@ Click your function name, select "Edit or test function". On the right nale open
 ** Warning **
 After invalidating the handler name the Lambda platform will still try to execute the fuction three time, typically in 3 minutes intervals. Leave the invalid name for some period of time to make sure the fuction isn't restarted.
 
+You can add the function again with the attached script create-function.sh, which is creating the function. However, it assumes that the necessary AWS role has already been created and must be specified on the command line.
 
 AWS Forum
 ---------
