@@ -60,6 +60,8 @@ After invalidating the handler name the Lambda platform will still try to execut
 
 You can add the function again with the attached script create-function.sh, which is creating the function. However, it assumes that the necessary AWS role has already been created and must be specified on the command line.
 
+Also, there is a function removal script delete-function.sh, which can additionally serve as an emergency break to stop the execution of Lambda.
+
 AWS Forum
 ---------
 
@@ -73,4 +75,3 @@ AWS Locuta Causa Finita
 It turns out to be a fascinating story and not a bug at all, but a kind of expected bahaviour:
 
 https://aws.amazon.com/blogs/compute/container-reuse-in-lambda/
-
